@@ -73,6 +73,11 @@ RUN wget https://get.docker.com/builds/Linux/x86_64/docker-1.13.0.tgz && \
 	rm docker-1.13.0.tgz && \
     ls /opt/docker && \
     mv /opt/docker/docker /usr/local/bin/docker
-
+    
+    
+ # swagger2markup
+ RUN wget https://jcenter.bintray.com/io/github/swagger2markup/swagger2markup-cli/1.3.1/swagger2markup-cli-1.3.1.jar
+ 
+ 
 # SSH config - prevents ssh commands from asking for host fingerprint verification - which is not handy when running an automated CI proces
 RUN echo "    StrictHostKeyChecking no" >> /etc/ssh/ssh_config
