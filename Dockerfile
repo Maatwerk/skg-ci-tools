@@ -3,7 +3,7 @@ FROM ubuntu:16.04
 # The basics (UPDATE, install git and other basic stuff)
 RUN apt-get update && \
     apt-get -y upgrade && \
-    apt-get -y install curl software-properties-common && \
+    apt-get -y install curl netcat software-properties-common && \
     apt-add-repository ppa:git-core/ppa && \
     apt-get update && \
     apt-get install -y libunwind8 libcurl3 git gosu && \
