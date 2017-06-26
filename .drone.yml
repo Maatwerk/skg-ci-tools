@@ -1,0 +1,18 @@
+pipeline:
+  clone:
+    image: plugins/git
+    depth: 10
+    recursive: true
+
+  end-to-end-selenium-testing:
+    image: docker:17
+    commands:
+      - docker build --tag skg/ci-tools .
+    environment:
+      - DOCKER_HOST=tcp://localhost:2375
+      
+services:
+  docker:
+    image: docker:17-dind
+    privileged: true
+    command: [ "--storage-driver=overlay"]
