@@ -4,7 +4,7 @@ pipeline:
     depth: 10
     recursive: true
 
-  end-to-end-selenium-testing:
+  docker-build:
     image: docker:17
     commands:
       - docker build --tag skg/ci-tools .
