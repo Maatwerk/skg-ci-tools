@@ -37,7 +37,7 @@ RUN \
     apt-get update && \
     apt-get install sbt && \
     rm -rf /var/lib/apt/lists/* && \
-    mkdir /root/.ivy2 && \
+    #mkdir /root/.ivy2 && \
     mkdir /root/.sbt
     
 VOLUME /root/.ivy2
