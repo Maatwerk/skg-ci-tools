@@ -43,7 +43,7 @@ VOLUME /root/.sbt
 
 
 # NodeJS
-RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - && \ 
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - && \
     apt-get update && \
     apt-get install -y nodejs && \
     rm -rf /var/lib/apt/lists/*
