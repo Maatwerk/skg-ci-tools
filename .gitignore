@@ -1,0 +1,13 @@
+# IDEs
+.idea
+/.idea_modules
+/.classpath
+/.project
+/.settings
+.history
+out.html
+skg-online.iml
+ensime.sbt
+
+# OS X related
+.DS_Store
