@@ -10,7 +10,6 @@ pipeline:
       - docker build --tag skg/ci-tools .
     environment:
       - DOCKER_HOST=tcp://localhost:2375
-      
 services:
   docker:
     image: docker:17-dind

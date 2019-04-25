@@ -6,7 +6,7 @@
 /.settings
 .history
 out.html
-skg-online.iml
+*.iml
 ensime.sbt
 
 # OS X related
