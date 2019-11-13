@@ -30,7 +30,7 @@ RUN apt-get update && \
 
 # SBT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/sbt/bin
-ENV SBT_VERSION=1.2.7
+ENV SBT_VERSION=1.2.8
 ENV SCALA_VERSION=2.12.8
 ENV SBT_HOME=/usr/local/sbt
 RUN \
