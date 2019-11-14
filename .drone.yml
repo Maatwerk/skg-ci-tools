@@ -5,7 +5,7 @@ pipeline:
     recursive: true
 
   docker-build:
-    image: docker:18
+    image: docker:19
     commands:
       - docker build --tag skg/ci-tools .
     environment:
@@ -13,6 +13,8 @@ pipeline:
 
 services:
   docker:
-    image: docker:18-dind
+    image: docker:19-dind
     privileged: true
+    environment:
+      DOCKER_TLS_CERTDIR: ""
     command: [ "--storage-driver=overlay"]
